@@ -1,7 +1,7 @@
 {
   "name": "2-dark-syntax",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Based on one-dark-syntax with less saturated colors",
   "keywords": [
     "dark",
