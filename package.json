@@ -1,0 +1,17 @@
+{
+  "name": "2-dark-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Based on one-dark-syntax with less saturated colors",
+  "keywords": [
+    "dark",
+    "blue",
+    "base16-tomorrow",
+    "syntax"
+  ],
+  "repository": "https://github.com/herkulano/2-dark-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}

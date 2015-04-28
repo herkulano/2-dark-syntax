@@ -1,0 +1,35 @@
+
+// Config -----------------------------------
+@syntax-hue:                  220;
+@syntax-saturation:           20%;
+@syntax-brightness:           20%;
+@syntax-strong-desaturation:  36%;
+@syntax-weak-desaturation:    8%;
+
+// Base colors -----------------------------------
+@syntax-base-accent-color:      hsl(@syntax-hue, 100%, 80% );
+@syntax-base-background-color:  hsv(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-base-text-color:        @light-gray;
+@syntax-base-guide-color:       fade(@syntax-base-text-color, 12%);
+
+
+// Colors: Mix Base16 Tomorrow with Theme hue -----------------------------------
+@syntax-mix-base:       hsl(@syntax-hue, 100%, 80%);
+@syntax-mix-grey:       12%;
+
+@very-light-gray: mix( @syntax-mix-base, hsl(0,0%,86%), @syntax-mix-grey);
+@light-gray:      mix( @syntax-mix-base, hsl(0,0%,74%), @syntax-mix-grey);
+@gray:            mix( @syntax-mix-base, hsl(0,0%,54%), @syntax-mix-grey);
+@dark-gray:       mix( @syntax-mix-base, hsl(0,0%,36%), @syntax-mix-grey);
+@very-dark-gray:  mix( @syntax-mix-base, hsl(0,0%,18%), @syntax-mix-grey);
+
+@cyan:            desaturate(#57B6C2, @syntax-strong-desaturation);
+@blue:            desaturate(#61AEEF, @syntax-strong-desaturation);
+@purple:          desaturate(#C679DD, @syntax-strong-desaturation);
+
+@green:           desaturate(#97C378, @syntax-weak-desaturation);
+@red:             desaturate(#cc6666, @syntax-weak-desaturation);
+@dark-red:        desaturate(#BE4F44, @syntax-weak-desaturation);
+@orange:          desaturate(#D29B67, @syntax-weak-desaturation);
+@light-orange:    desaturate(#E5C17C, @syntax-weak-desaturation);
+@bright-orange:   desaturate(#FF8000, @syntax-weak-desaturation);
