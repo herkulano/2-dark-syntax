@@ -7,15 +7,15 @@
 @syntax-weak-desaturation:    8%;
 
 // Base colors -----------------------------------
-@syntax-base-accent-color:      hsl(@syntax-hue, 100%, 80% );
+@syntax-base-accent-color:      hsl(@syntax-hue, 100%, 66% );
 @syntax-base-background-color:  hsv(@syntax-hue, @syntax-saturation, @syntax-brightness);
 @syntax-base-text-color:        @light-gray;
 @syntax-base-guide-color:       fade(@syntax-base-text-color, 12%);
 
 
 // Colors: Mix Base16 Tomorrow with Theme hue -----------------------------------
-@syntax-mix-base:       hsl(@syntax-hue, 100%, 80%);
-@syntax-mix-grey:       12%;
+@syntax-mix-base:       hsl(@syntax-hue, 100%, 66%);
+@syntax-mix-grey:       10%;
 
 @very-light-gray: mix( @syntax-mix-base, hsl(0,0%,86%), @syntax-mix-grey);
 @light-gray:      mix( @syntax-mix-base, hsl(0,0%,74%), @syntax-mix-grey);
